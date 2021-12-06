@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    background-color: deepskyblue;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+section.ust-header {
+ display: block;
+ color: teal;
+ background-color: dimgray ;
+ overflow: hidden;
+}
+.tanitim {
+background-color: snow;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media only screen and (max-width: 680px) {
+    .tanitim {
+        height: auto;
+        background-color: snow;
+        display: block;
+        padding: 25px 0;
+        }
+  }
+.telno {
+    font-size: 20px;
+    color: #e58565;
+    font-weight: bold;
+    animation: telno 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes telno{
+    0%   {color:#e58565;}
+    25%  {color:darkred; }
+    50%  {color:#e58565; }
+    75%  {color:darkred;}
+    100% {color:#e58565;}
+}
+.active-page{
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+.form-alani{
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-area{
+    background-color: #FAEBD7;
+    padding:20px;
+}
+.ozellikler {
+    background-color: darkslategray;
+    color: #fff;
+    margin:0;
+    padding: 20px 0;
+}
+.icon {
+    font-size:45px;
+    color: goldenrod;
+}
+.ozellikler .col-md-3 {
+    padding: 0 30px;
+}
+.metin {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.footer {
+    padding: 30px 0;
+    background-color: darkslateblue;
+    color:White;
+}
+.footer hr{
+    color: white;
+}
+.whatsapp-ara {
+    padding: 15px 0;
+    text-align: center;
+    font-size:24px;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-ara i {    
+    animation: telefon 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes telefon{
+    0%   {color:white; transform: rotate(15deg);}
+    25%  {color:darkred; transform: rotate(0deg);}
+    50%  {color:white; transform: rotate(15deg);}
+    75%  {color:darkred; transform: rotate(0deg);}
+    100% {color:white; transform: rotate(15deg);}
+}
+.form-area input{
+    border-radius: 15px;
+}
+.form-area textarea{
+    border-radius: 15px;
+}
+.sol-iletisim{
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+}
+.whatsapp{
+    border-top-right-radius: 15px;
+    background-color:orange;
+    padding: 10px 10px;
+    display: flex;
+    z-index: 1;
+}
+.form{
+    border-bottom-right-radius: 15px;
+    background-color:orange;
+    padding: 10px 10px;
+    display: flex;
+    z-index: 1;
+}
+.phone{
+    background-color:purple;
+    padding: 10px 10px;
+    display: flex;
+    z-index: 1;
+}
+.gizle {
+    display: none;
+}
+.goster {
+    display: block;;
+}
+#form-span{
+    padding-left: 40px;
+}
+.karekutu {
+    font-weight: lighter;
+    color: #778899;
+}
+.yukari {
+    font-size: 48px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.listEleman li {
+    list-style: none;
+}
+.listEleman li::before {
+    content: "\2713";
+    margin-right: 5px;
+}
+.renkli {
+    background-color: yellow;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 84% 16% 70% 30% / 18% 62% 38% 82% ;
+    
+}
+.renkli1 {
+    background-color: royalblue;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 84% 16% 70% 30% / 18% 62% 38% 82% ;
+
+}
+#resim{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+#resim:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
